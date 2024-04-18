@@ -18,20 +18,20 @@ Our previous works:
 
 * **To train and test the SegLand on the contest dataset, follow these steps:**
 1. Dataset and project preprocessing
-1.1. Replace the 'YOUR_PROJECT_ROOT' in ./scripts/train_oem.sh with your POP project directory;
-1.2. Download the OEM trainset and unzip the file, then replace the 'YOUR_PATH_FOR_OEM_TRAIN_DATA' in ./scripts/train_oem.sh;
-1.3. Download the OEM testset and unzip the file, then replace the 'YOUR_PATH_FOR_OEM_TEST_DATA' in ./scripts/evaluate_oem_base.sh and ./scripts/evaluate_oem.sh;
+*  Replace the 'YOUR_PROJECT_ROOT' in ./scripts/train_oem.sh with your POP project directory;
+*  Download the OEM trainset and unzip the file, then replace the 'YOUR_PATH_FOR_OEM_TRAIN_DATA' in ./scripts/train_oem.sh;
+*  Download the OEM testset and unzip the file, then replace the 'YOUR_PATH_FOR_OEM_TEST_DATA' in ./scripts/evaluate_oem_base.sh and ./scripts/evaluate_oem.sh;
 (The train.txt, val.txt, all_5shot_seed123.txt (the list of support set) and test.txt have already been set according to the released datalist, which do not need any modification)
 
 2. Base class training and evaluation
-2.1. Train the base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/train_oem.sh`, and the model together with the log file will be stored in ./model_saved_base;
-2.2. Evaluate the trained base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_oem_base.sh`, you shall replace the 'RESTORE_PATH' with your own saved checkpoint path, and the output prediction maps together with the log file will be stored in ./output;
+*  Train the base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/train_oem.sh`, and the model together with the log file will be stored in ./model_saved_base;
+*  Evaluate the trained base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_oem_base.sh`, you shall replace the 'RESTORE_PATH' with your own saved checkpoint path, and the output prediction maps together with the log file will be stored in ./output;
 
 3. Novel class updating and evaluation
-3.1. Run `python gen_new_samples_for_new_class.py` to transform the samples generated with cutmixing operation, the generated samples and list are stored in 'YOUR_PATH_OF_CUTMIX_SAMPLES', and the samples should be copied to 'YOUR_PATH_FOR_OEM_TRAIN_DATA', while the list should be appended after all_5shot_seed123.txt;
-3.2. Update the trained base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/ft_oem.sh`, you shall replace the 'RESTORE_PATH' with your own saved checkpoint path, and the model together with the log file will be stored in ./model_saved_ft;
-3.3. Evaluate the trained base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_oem_base.sh`, you shall replace the 'RESTORE_PATH' with your own saved checkpoint path, and the output prediction maps together with the log file will be stored in ./output;
+*  Run `python gen_new_samples_for_new_class.py` to transform the samples generated with cutmixing operation, the generated samples and list are stored in 'YOUR_PATH_OF_CUTMIX_SAMPLES', and the samples should be copied to 'YOUR_PATH_FOR_OEM_TRAIN_DATA', while the list should be appended after all_5shot_seed123.txt;
+*  Update the trained base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/ft_oem.sh`, you shall replace the 'RESTORE_PATH' with your own saved checkpoint path, and the model together with the log file will be stored in ./model_saved_ft;
+*  Evaluate the trained base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/evaluate_oem_base.sh`, you shall replace the 'RESTORE_PATH' with your own saved checkpoint path, and the output prediction maps together with the log file will be stored in ./output;
 
 4. Output transformation and probability map fusion
-4.1. Run `python trans.py` to transform the output map to the format that matches the requirements of the competetion, the output will be stored in ./upload;
-4.2 (Optional) If multiple probability outputs (in *.mat format) are generated, these can be fused by running `python fusemat.py`, you shall replace all the 'PATH_OF_PROBABILITY_MAP_\*' with your own paths (which will be generated under ./output/prob)
+*  Run `python trans.py` to transform the output map to the format that matches the requirements of the competetion, the output will be stored in ./upload;
+* (Optional) If multiple probability outputs (in *.mat format) are generated, these can be fused by running `python fusemat.py`, you shall replace all the 'PATH_OF_PROBABILITY_MAP_\*' with your own paths (which will be generated under ./output/prob)
