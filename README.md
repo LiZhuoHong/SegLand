@@ -1,6 +1,4 @@
-# SegLand
-Generalized Few-Shot Meets Remote Sensing: Discovering Novel Classes in Land Cover Mapping via Hybrid Semantic Segmentation Framework
-# Paraformer: Updating Large-scale High-resolution Land Cover Maps from Low-resolution Historical Labels
+# SegLand: Generalized Few-Shot Meets Remote Sensing: Discovering Novel Classes in Land Cover Mapping via Hybrid Semantic Segmentation Framework
 Land-cover mapping is one of the vital applications in Earth observation. As natural and human activities change the landscape, the land-cover map needs to be rapidly updated. However, discovering newly appeared land-cover types in existing classification systems is still a non-trivial task hindered by various scales of complex land objects and insufficient labeled data over a wide-span geographic area. To address these limitations, we propose a generalized few-shot segmentation-based framework, named SegLand, to update novel classes in high-resolution land-cover mapping. 
 
 The SegLand is accepted by the CVPR 2024 L3D-IVU workshop and score **:rocket:1st place in the OpenEarthMap Land Cover Mapping Few-Shot Challenge:rocket:**. See you in CVPR (Seattle, 17 June)!
