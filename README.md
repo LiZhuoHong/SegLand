@@ -18,10 +18,10 @@ Our previous works:
 
 * **To train and test the SegLand on the contest dataset, follow these steps:**
 1. Dataset and project preprocessing
-*  Replace the 'YOUR_PROJECT_ROOT' in ./scripts/train_oem.sh with your POP project directory;
-*  Download the OEM trainset and unzip the file, then replace the 'YOUR_PATH_FOR_OEM_TRAIN_DATA' in ./scripts/train_oem.sh;
-*  Download the OEM testset and unzip the file, then replace the 'YOUR_PATH_FOR_OEM_TEST_DATA' in ./scripts/evaluate_oem_base.sh and ./scripts/evaluate_oem.sh;
-(The train.txt, val.txt, all_5shot_seed123.txt (the list of support set) and test.txt have already been set according to the released datalist, which do not need any modification)
+*  Replace the `'YOUR_PROJECT_ROOT'` in `./scripts/train_oem.sh` with your POP project directory;
+*  Download the OEM trainset and unzip the file, then replace the `'YOUR_PATH_FOR_OEM_TRAIN_DATA'` in `./scripts/train_oem.sh`;
+*  Download the OEM testset and unzip the file, then replace the `'YOUR_PATH_FOR_OEM_TEST_DATA'` in `./scripts/evaluate_oem_base.sh and ./scripts/evaluate_oem.sh`;
+(The train.txt, val.txt, all_5shot_seed123.txt (the list of support set), and test.txt have already been set according to the released data list, which do not need any modification)
 
 2. Base class training and evaluation
 *  Train the base model by running `CUDA_VISIBLE_DEVICES=0 bash ./scripts/train_oem.sh`, and the model together with the log file will be stored in ./model_saved_base;
