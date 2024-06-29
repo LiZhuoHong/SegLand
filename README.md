@@ -8,7 +8,7 @@ Contact me at ashelee@whu.edu.cn
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
   
 Our previous works:
-* [**Paraformer (L2HNet V2)**](https://arxiv.org/abs/2403.02746): accepted by CVPR 2024 (Highlight), the hybrid CNN-ViT framework for HR land-cover mapping using LR labels.[**Code**](https://github.com/LiZhuoHong/Paraformer/)
+* [**Paraformer (L2HNet V2)**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf): accepted by CVPR 2024 (Highlight), the hybrid CNN-ViT framework for HR land-cover mapping using LR labels.[**Code**](https://github.com/LiZhuoHong/Paraformer/)
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): accepted by ISPRS P&RS in 2022, The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
 * [**BuildingMap**](https://arxiv.org/abs/2403.02746): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
