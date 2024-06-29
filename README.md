@@ -4,11 +4,11 @@ Land-cover mapping is one of the vital applications in Earth observation. As nat
 The SegLand is accepted by the CVPR 2024 L3D-IVU workshop and score **:rocket:1st place in the OpenEarthMap Land Cover Mapping Few-Shot Challenge:rocket:**. See you in CVPR (Seattle, 17 June)!
 
 Contact me at ashelee@whu.edu.cn
-* [**Paper**](https://arxiv.org/abs/2403.02746)
+* [**Paper**]([https://arxiv.org/abs/2403.02746](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf))
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
   
 Our previous works:
-* [**Paraformer (L2HNet V2)**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf): accepted by CVPR 2024 (Highlight), the hybrid CNN-ViT framework for HR land-cover mapping using LR labels.[**Code**](https://github.com/LiZhuoHong/Paraformer/)
+* [**Paraformer (L2HNet V2)**](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Learning_without_Exact_Guidance_Updating_Large-scale_High-resolution_Land_Cover_Maps_CVPR_2024_paper.pdf): accepted by CVPR 2024 (Highlight), the hybrid CNN-ViT framework for HR land-cover mapping using LR labels.[**Code**](https://github.com/LiZhuoHong/Paraformer/)
 * [**L2HNet V1**](https://www.sciencedirect.com/science/article/abs/pii/S0924271622002180): accepted by ISPRS P&RS in 2022, The low-to-high network for HR land-cover mapping using LR labels.
 * [**SinoLC-1**](https://essd.copernicus.org/articles/15/4749/2023/): accepted by ESSD in 2023, the first 1-m resolution national-scale land-cover map of China.[**Data**](https://zenodo.org/record/7821068)
 * [**BuildingMap**](https://arxiv.org/abs/2403.02746): accepted by IGARSS 2024 (Oral), To identify every building's function in urban area.[**Data**](https://github.com/LiZhuoHong/BuildingMap/)
@@ -35,3 +35,16 @@ Our previous works:
 4. Output transformation and probability map fusion
 *  Run `python trans.py` to transform the output map to the format that matches the requirements of the competetion, the output will be stored in ./upload;
 * (Optional) If multiple probability outputs (in *.mat format) are generated, these can be fused by running `python fusemat.py`, you shall replace all the 'PATH_OF_PROBABILITY_MAP_\*' with your own paths (which will be generated under ./output/prob)
+
+ 
+Citation
+-------
+   ```bash
+@InProceedings{Li_2024_CVPR,
+    author    = {Li, Zhuohong and Lu, Fangxiao and Zou, Jiaqi and Hu, Lei and Zhang, Hongyan},
+    title     = {Generalized Few-Shot Meets Remote Sensing: Discovering Novel Classes in Land Cover Mapping via Hybrid Semantic Segmentation Framework},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {2744-2754}
+}
