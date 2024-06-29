@@ -4,7 +4,7 @@ Land-cover mapping is one of the vital applications in Earth observation. As nat
 The SegLand is accepted by the CVPR 2024 L3D-IVU workshop and score **:rocket:1st place in the OpenEarthMap Land Cover Mapping Few-Shot Challenge:rocket:**. See you in CVPR (Seattle, 17 June)!
 
 Contact me at ashelee@whu.edu.cn
-* [**Paper**]([https://arxiv.org/abs/2403.02746](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf))
+* [**Paper**](https://openaccess.thecvf.com/content/CVPR2024W/L3D-IVU/papers/Li_Generalized_Few-Shot_Meets_Remote_Sensing_Discovering_Novel_Classes_in_Land_CVPRW_2024_paper.pdf)
 * [**My homepage**](https://lizhuohong.github.io/lzh/)
   
 Our previous works:
