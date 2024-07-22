@@ -40,6 +40,16 @@ Our previous works:
 Citation
 -------
    ```bash
+@article{li2022breaking,
+  title={Breaking the resolution barrier: A low-to-high network for large-scale high-resolution land-cover mapping using low-resolution labels},
+  author={Li, Zhuohong and Zhang, Hongyan and Lu, Fangxiao and Xue, Ruoyao and Yang, Guangyi and Zhang, Liangpei},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={192},
+  pages={244--267},
+  year={2022},
+  publisher={Elsevier}
+}
+
 @InProceedings{Li_2024_CVPR,
     author    = {Li, Zhuohong and Lu, Fangxiao and Zou, Jiaqi and Hu, Lei and Zhang, Hongyan},
     title     = {Generalized Few-Shot Meets Remote Sensing: Discovering Novel Classes in Land Cover Mapping via Hybrid Semantic Segmentation Framework},
